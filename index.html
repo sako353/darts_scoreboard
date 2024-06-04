@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ダーツ記録</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-1.12.4.min.js"></script>
+  <script src="program.js"></script>
+</head>
+<body>
+<div id="content">
+  <div id="mode-buttons">
+    <button id="countup-mode">カウントアップモード</button>
+    <button id="zeroone-mode">01モード</button>
+    <button id="cricket-mode">クリケットモード</button>
+  </div>
+  <div id="zeroone-options" style="display: none;">
+    <button class="zeroone-option" data-points="301">301</button>
+    <button class="zeroone-option" data-points="501">501</button>
+    <button class="zeroone-option" data-points="701">701</button>
+    <button class="zeroone-option" data-points="901">901</button>
+    <button class="zeroone-option" data-points="1001">1001</button>
+  </div>
+  <div id="game-area">
+    <div><span id="player-turn">プレイヤー1の番</span></div>
+    <div><span id="throw-count">1</span>/3</div>
+    <div id="darts">
+      <div id="score-display-overlay"></div>
+    </div>
+    <div id="buttons">
+      <button id="reset">リセット</button>
+      <button id="finish">終了</button>
+      <button id="add-player">プレイヤー追加</button>
+      <button id="remove-player">プレイヤー削除</button>
+    </div>
+    <div id="score-display">
+      プレイヤー1: <span id="total-score">0</span>
+    </div>
+    <div id="player-scores">
+      <div id="player1-score-display">プレイヤー1: <span id="player1-score">0</span></div>
+      <div id="player2-score-display" style="display: none;">プレイヤー2: <span id="player2-score">0</span></div>
+      <div id="player3-score-display" style="display: none;">プレイヤー3: <span id="player3-score">0</span></div>
+      <div id="player4-score-display" style="display: none;">プレイヤー4: <span id="player4-score">0</span></div>
+    </div>
+    <div id="cricket-board" style="display: none;">
+      <table>
+        <thead>
+          <tr>
+            <th>Score</th>
+            <th>プレイヤー1</th>
+            <th>プレイヤー2</th>
+            <th>プレイヤー3</th>
+            <th>プレイヤー4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="cricket-20">
+            <td>20</td>
+            <td id="cricket-20-1"></td>
+            <td id="cricket-20-2"></td>
+            <td id="cricket-20-3"></td>
+            <td id="cricket-20-4"></td>
+          </tr>
+          <tr id="cricket-19">
+            <td>19</td>
+            <td id="cricket-19-1"></td>
+            <td id="cricket-19-2"></td>
+            <td id="cricket-19-3"></td>
+            <td id="cricket-19-4"></td>
+          </tr>
+          <tr id="cricket-18">
+            <td>18</td>
+            <td id="cricket-18-1"></td>
+            <td id="cricket-18-2"></td>
+            <td id="cricket-18-3"></td>
+            <td id="cricket-18-4"></td>
+          </tr>
+          <tr id="cricket-17">
+            <td>17</td>
+            <td id="cricket-17-1"></td>
+            <td id="cricket-17-2"></td>
+            <td id="cricket-17-3"></td>
+            <td id="cricket-17-4"></td>
+          </tr>
+          <tr id="cricket-16">
+            <td>16</td>
+            <td id="cricket-16-1"></td>
+            <td id="cricket-16-2"></td>
+            <td id="cricket-16-3"></td>
+            <td id="cricket-16-4"></td>
+          </tr>
+          <tr id="cricket-15">
+            <td>15</td>
+            <td id="cricket-15-1"></td>
+            <td id="cricket-15-2"></td>
+            <td id="cricket-15-3"></td>
+            <td id="cricket-15-4"></td>
+          </tr>
+          <tr id="cricket-bull">
+            <td>Bull</td>
+            <td id="cricket-bull-1"></td>
+            <td id="cricket-bull-2"></td>
+            <td id="cricket-bull-3"></td>
+            <td id="cricket-bull-4"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

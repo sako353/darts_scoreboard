@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 50px;
+    background-color: #ffffff;
+}
+
+#content {
+    text-align: center;
+}
+
+#mode-buttons {
+    margin-bottom: 20px;
+}
+
+#mode-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+#zeroone-options {
+    margin: 10px 0;
+}
+
+#zeroone-options button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+#throw-count {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#darts {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: url('dartboard.png') no-repeat center center;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+#buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+#score-display {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#player-scores {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#cricket-board {
+    margin-top: 20px;
+}
+
+#cricket-board table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cricket-board th, #cricket-board td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+#score-display-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 400px;
+    display: none;
+}
+
+#score-display-overlay.single {
+    color: white;
+}
+
+#score-display-overlay.double {
+    color: yellow;
+}
+
+#score-display-overlay.triple {
+    color: pink;
+}
+
+#score-display-overlay.other {
+    color: gray;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: red;
+}
