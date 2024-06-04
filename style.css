@@ -79,7 +79,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 400px;
+    font-size: 300px;
+    -webkit-text-stroke: 5px #000;
     display: none;
 }
 
