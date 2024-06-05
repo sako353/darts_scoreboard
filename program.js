@@ -52,6 +52,7 @@ $(function() {
         for (let i = 1; i <= 4; i++) {
             if (i <= playerCount) {
                 $(`#player${i}-score-display`).show();
+                $(`#cricket-p-${i}`).show()
                 $(`#cricket-20-${i}`).show();
                 $(`#cricket-19-${i}`).show();
                 $(`#cricket-18-${i}`).show();
@@ -61,6 +62,7 @@ $(function() {
                 $(`#cricket-bull-${i}`).show();
             } else {
                 $(`#player${i}-score-display`).hide();
+                $(`#cricket-p-${i}`).hide()
                 $(`#cricket-20-${i}`).hide();
                 $(`#cricket-19-${i}`).hide();
                 $(`#cricket-18-${i}`).hide();
